@@ -95,3 +95,29 @@ users[1].email
 // console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+/* OBJECT DE-STRUCTURING*/
+const course = {
+    coursename : "js in hindi",
+    price : "999",
+    teacher : "hitesh sir",
+}
+//console.log(course.teacher) //normal way to access
+// but to make more clean
+const {teacher /*value to extract*/ } = course /*starting value*/ 
+//if we want to change a long name to extract 
+const {teacher : master}=course
+console.log(master);
+
+/*APIs*/
+// these are values from brackend that can be written,earlier values were in XML now JSON 
+// JASON is {something}
+
+/*   {
+       "name": "sonal",
+       "coursename" : "js in hindi ",
+       "price" : "free"
+}
+just like we access the  value of object we can fetch the values of APIs */
+
+}
+
